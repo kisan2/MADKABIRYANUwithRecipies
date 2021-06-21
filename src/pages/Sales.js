@@ -549,7 +549,7 @@ export class Sales extends Component {
                           <td style={{ paddingBottom: 10 }}>Discount Amount</td>
                           <td style={{ paddingBottom: 10 }}>:</td>
                           <td style={{ paddingBottom: 10 }}>Rs.
-                           {parseFloat(item.discount.value).toFixed(2)}</td>
+                            {parseFloat(item.discount.value).toFixed(2)}</td>
                         </tr>
                         <tr>
                           <td style={{
@@ -613,7 +613,7 @@ export class Sales extends Component {
                         <p id='title'>
                           {" "}
                           <ShoppingCart id='titl' /> Sales Invoice
-                    </p>
+                        </p>
                       </div>
 
                       <div style={{
@@ -903,8 +903,8 @@ export class Sales extends Component {
                                 <div style={{ marginTop: 10 }}>
                                   Rs
                                   {this.state.type === "none"
-                                    ? item.totalAmount + 25
-                                    : this.grandTotal(item.totalAmount + 25)}
+                                    ? item.totalAmount
+                                    : this.grandTotal(item.totalAmount)}
                                 </div>{" "}
                               </div>
                             </FormInputs>
@@ -1317,8 +1317,8 @@ export class Sales extends Component {
                                         <div style={{ marginTop: 10 }}>
                                           Rs
                                           {this.state.type === "none"
-                                            ? parseFloat(item.totalAmount) + parseFloat(this.state.deliveryCharge) + 25
-                                            : this.grandTotal(item.totalAmount + parseFloat(this.state.deliveryCharge) + 25)}
+                                            ? parseFloat(item.totalAmount) + parseFloat(this.state.deliveryCharge)
+                                            : this.grandTotal(item.totalAmount + parseFloat(this.state.deliveryCharge))}
                                         </div>{" "}
                                       </div>
                                     </FormInputs>

@@ -188,12 +188,12 @@ export class ComponentToPrint extends React.PureComponent {
                             <td style={{ paddingBottom: 10 }}>:</td>
                             <td style={{ paddingBottom: 10 }}>Rs. {parseFloat(this.props.discount).toFixed(2)}</td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                             <td style={{ paddingBottom: 10 }}>
                                 Service Charge</td>
                             <td style={{ paddingBottom: 10 }}>:</td>
-                            <td style={{ paddingBottom: 10 }}>Rs. 25.00</td>
-                        </tr>
+                            <td style={{ paddingBottom: 10 }}>Rs. 00.00</td>
+                        </tr> */}
                         <tr>
                             <td style={{ paddingBottom: 10 }}>
                                 Delivery Charge</td>
@@ -212,7 +212,7 @@ export class ComponentToPrint extends React.PureComponent {
                             <td style={{
                                 border: "2px dashed black", borderLeft: 'none', borderRight: 'none', padding: 10,
                                 paddingRight: 0, paddingLeft: 0
-                            }}>Rs. {parseFloat(this.props.netAmount + 25).toFixed(2)}</td>
+                            }}>Rs. {parseFloat(this.props.netAmount).toFixed(2)}</td>
                         </tr>
                         <tr>
                             <td style={{ padding: 10, paddingRight: 0, paddingLeft: 0 }}>Paid Status</td>
